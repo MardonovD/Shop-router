@@ -1,0 +1,30 @@
+.logo span {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--color-white);
+  /* padding: 10px; */
+  cursor: pointer;
+}
+
+.header {
+  background-color: var(--color-green);
+  display: flex;
+  align-items: center;
+}
+
+.header .container-fluid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav .nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 10px;
+}
+
+.nav .nav-ul li Link {
+  /* color: var(--color-white); */
+}
