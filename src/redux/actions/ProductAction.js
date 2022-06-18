@@ -1,8 +1,13 @@
+import axiosFunction from "../../components/api/Api";
 export const PRODUCTS = "PRODUCTS";
 
-export const productAc = (data) => (dispatch) => {
+export const productAc = () => async (dispatch, getState) => {
+  const dataY = await axiosFunction("products");
+  
+  console.log(dataY.data);
+
   dispatch({
     type: PRODUCTS,
-    payload: data,
+    payload: dataY.data,
   });
 };
